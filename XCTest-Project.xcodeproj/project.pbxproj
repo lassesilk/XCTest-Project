@@ -14,6 +14,9 @@
 		C414F2A9247B0E330063A1E4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C414F2A8247B0E330063A1E4 /* Assets.xcassets */; };
 		C414F2AC247B0E330063A1E4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C414F2AA247B0E330063A1E4 /* LaunchScreen.storyboard */; };
 		C414F2B7247B0E340063A1E4 /* XCTest_ProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C414F2B6247B0E340063A1E4 /* XCTest_ProjectTests.swift */; };
+		C414F2C2247B0EE50063A1E4 /* ValidationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C414F2C1247B0EE50063A1E4 /* ValidationService.swift */; };
+		C414F2C4247B0F160063A1E4 /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C414F2C3247B0F160063A1E4 /* UIViewController+Extensions.swift */; };
+		C414F2C6247B1D6F0063A1E4 /* ValidationServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C414F2C5247B1D6F0063A1E4 /* ValidationServiceTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +41,9 @@
 		C414F2B2247B0E340063A1E4 /* XCTest-ProjectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "XCTest-ProjectTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C414F2B6247B0E340063A1E4 /* XCTest_ProjectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCTest_ProjectTests.swift; sourceTree = "<group>"; };
 		C414F2B8247B0E340063A1E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C414F2C1247B0EE50063A1E4 /* ValidationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidationService.swift; sourceTree = "<group>"; };
+		C414F2C3247B0F160063A1E4 /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
+		C414F2C5247B1D6F0063A1E4 /* ValidationServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidationServiceTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +88,8 @@
 				C414F29F247B0E310063A1E4 /* AppDelegate.swift */,
 				C414F2A1247B0E310063A1E4 /* SceneDelegate.swift */,
 				C414F2A3247B0E310063A1E4 /* ViewController.swift */,
+				C414F2C3247B0F160063A1E4 /* UIViewController+Extensions.swift */,
+				C414F2C1247B0EE50063A1E4 /* ValidationService.swift */,
 				C414F2A5247B0E310063A1E4 /* Main.storyboard */,
 				C414F2A8247B0E330063A1E4 /* Assets.xcassets */,
 				C414F2AA247B0E330063A1E4 /* LaunchScreen.storyboard */,
@@ -94,6 +102,7 @@
 			isa = PBXGroup;
 			children = (
 				C414F2B6247B0E340063A1E4 /* XCTest_ProjectTests.swift */,
+				C414F2C5247B1D6F0063A1E4 /* ValidationServiceTests.swift */,
 				C414F2B8247B0E340063A1E4 /* Info.plist */,
 			);
 			path = "XCTest-ProjectTests";
@@ -202,6 +211,8 @@
 			files = (
 				C414F2A4247B0E310063A1E4 /* ViewController.swift in Sources */,
 				C414F2A0247B0E310063A1E4 /* AppDelegate.swift in Sources */,
+				C414F2C4247B0F160063A1E4 /* UIViewController+Extensions.swift in Sources */,
+				C414F2C2247B0EE50063A1E4 /* ValidationService.swift in Sources */,
 				C414F2A2247B0E310063A1E4 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -210,6 +221,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C414F2C6247B1D6F0063A1E4 /* ValidationServiceTests.swift in Sources */,
 				C414F2B7247B0E340063A1E4 /* XCTest_ProjectTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -372,7 +384,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.lassesilkoset.XCTest-Project";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -390,7 +402,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.lassesilkoset.XCTest-Project";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
